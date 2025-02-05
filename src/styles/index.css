@@ -10,3 +10,49 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+#trafficlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trafficlight-head {
+    width: 100px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#trafficlight-pole {
+    width: 20px;
+    height: 200px;
+    background-color: #333;
+}
+
+#greenlight,
+#yellowlight,
+#redlight {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #555;
+    cursor:pointer;
+}
+
+#greenlight.active {
+    background-color: green;
+}
+
+#yellowlight.active {
+    background-color: yellow;
+}
+
+#redlight.active {
+    background-color: red;
+}
